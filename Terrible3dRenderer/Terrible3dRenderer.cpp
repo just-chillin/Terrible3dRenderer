@@ -7,9 +7,18 @@
 #include <fstream>
 #include <vector>
 
-#include "SDL.h"
+#include <SDL.h>
 
 #include "RenderNode.h"
+#include "RenderObject.h"
+
+bool isObjectDefinition(std::string& line) {
+    if (line.length() < 0) {
+        return false;
+    }
+
+    return line[0] == 'o';
+}
 
 std::vector<std::unique_ptr<RenderObject>> getRenderObjects(std::ifstream& buf) {
     std::vector<std::unique_ptr<RenderObject>> objects;
@@ -51,7 +60,7 @@ void usage() {
 
 int wmain(int argc, wchar_t** argv)
 {
-    //SDL_Init(SDL_INIT_EVERYTHING);
+    SDL_Init(SDL_INIT_EVERYTHING);
 
     if (argc < 1) {
         usage();
