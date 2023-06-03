@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\deps">
+      <UniqueIdentifier>{5bcfb6be-c135-4266-884a-43a4d6572975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\deps\gmtl">
+      <UniqueIdentifier>{77f428cc-362e-4506-af48-1e5e077d6e5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\deps\sdl">
+      <UniqueIdentifier>{11e2e7a2-5cea-41ac-8b92-a3af13b7d915}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Terrible3dRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Numerics\Eigen.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Util\Assert.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Util\Meta.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Util\StaticAssert.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\AABox.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\AABoxOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\AxisAngle.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\AxisAngleOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Comparitors.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Config.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Containment.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Coord.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\CoordOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Defines.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\EulerAngle.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\EulerAngleOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Frustum.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\FrustumOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Generate.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\gmtl.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Helpers.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Intersection.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\LineSeg.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\LineSegOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Math.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Matrix.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\MatrixOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\OOBox.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Output.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\ParametricCurve.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Plane.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\PlaneOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Point.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Quat.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\QuatOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Ray.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\RayOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Sphere.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\SphereOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Tri.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\TriOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Vec.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\VecBase.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\VecExprMeta.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\VecOps.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\VecOpsMeta.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Version.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Xforms.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\External\OpenSGConvert.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Fit\GaussPointsFit.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\gmtl-0.6.1\gmtl\Misc\MatrixConvert.h">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_assert.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_atomic.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_audio.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_bits.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_blendmode.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_clipboard.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_config.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_cpuinfo.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_egl.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_endian.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_error.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_events.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_filesystem.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_gamecontroller.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_gesture.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_guid.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_haptic.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_hidapi.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_hints.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_joystick.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_keyboard.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_keycode.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_loadso.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_locale.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_log.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_main.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_messagebox.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_metal.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_misc.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_mouse.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_mutex.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_name.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengl.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengl_glext.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengles.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengles2.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengles2_gl2.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengles2_gl2ext.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengles2_gl2platform.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_opengles2_khrplatform.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_pixels.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_platform.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_power.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_quit.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_rect.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_render.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_revision.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_rwops.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_scancode.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_sensor.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_shape.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_stdinc.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_surface.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_system.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_syswm.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_assert.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_common.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_compare.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_crc32.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_font.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_fuzzer.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_harness.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_images.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_log.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_md5.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_memory.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_test_random.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_thread.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_timer.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_touch.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_types.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_version.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_video.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_vulkan.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\begin_code.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\close_code.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL.h">
+      <Filter>Header Files\deps\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\deps\gmtl-0.6.1\gmtl\gmtl.doxygen">
+      <Filter>Header Files\deps\gmtl</Filter>
+    </None>
+  </ItemGroup>
+</Project>
