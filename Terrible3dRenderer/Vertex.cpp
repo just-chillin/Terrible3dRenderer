@@ -1,5 +1,7 @@
 #include <format>
 
+#include <SDL.h>
+
 #include "Vertex.h"
 #include "Exceptions.h"
 
@@ -20,8 +22,8 @@ float Vertex::x() { return point[0]; }
 float Vertex::y() { return point[1]; }
 float Vertex::z() { return point[2]; }
 
-void Vertex::render() {
-
+void Vertex::render(RenderContext *ctx) {
+	SDL_RenderDrawPoint(ctx->renderer, x() / z(), y() / z());
 }
 
 std::ostream& operator<<(std::ostream& os, Vertex& v)

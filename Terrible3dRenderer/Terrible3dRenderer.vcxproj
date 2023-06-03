@@ -139,7 +139,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="RenderContext.cpp" />
-    <ClCompile Include="RenderNode.cpp" />
     <ClCompile Include="RenderObject.cpp" />
     <ClCompile Include="Terrible3dRenderer.cpp" />
     <ClCompile Include="Vertex.cpp" />
@@ -276,7 +275,6 @@
     <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_vulkan.h" />
     <ClInclude Include="Exceptions.h" />
     <ClInclude Include="RenderContext.h" />
-    <ClInclude Include="RenderNode.h" />
     <ClInclude Include="RenderObject.h" />
     <ClInclude Include="Vertex.h" />
   </ItemGroup>

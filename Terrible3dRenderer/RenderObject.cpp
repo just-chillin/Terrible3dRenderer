@@ -1,7 +1,9 @@
 #include <string>
+#include <iostream>
 
 #include "Vertex.h"
 #include "RenderObject.h"
+#include "RenderContext.h"
 
 void RenderObject::consume(std::istream& line) {
 	std::string verb;
@@ -18,8 +20,10 @@ void RenderObject::consume(std::istream& line) {
 	}
 }
 
-void RenderObject::render() {
-
+void RenderObject::render(RenderContext *ctx) {
+	for (auto& vtx : vertices) {
+		vtx.render(ctx);
+	}
 }
 
 std::ostream& operator<<(std::ostream& os, RenderObject& r) {

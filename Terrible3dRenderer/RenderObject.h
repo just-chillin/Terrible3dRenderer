@@ -1,12 +1,19 @@
 #pragma once
 
-#include "RenderNode.h"
+#include <vector>
 
-class RenderObject : RenderNode {
-	std::vector<Vertex> vertices{};
+#include "Vertex.h"
+#include "RenderContext.h"
+
+class RenderNode;
+class RenderContext;
+class Vertex;
+
+class RenderObject {
+	std::vector<Vertex> vertices;
 public:
 	void consume(std::istream& line);
-	void render();
+	void render(RenderContext *ctx);
 
 	friend std::ostream& operator<<(std::ostream& os, RenderObject& r);
 };

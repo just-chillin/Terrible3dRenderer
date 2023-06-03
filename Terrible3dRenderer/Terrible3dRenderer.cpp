@@ -9,7 +9,6 @@
 
 #include <SDL.h>
 
-#include "RenderNode.h"
 #include "RenderObject.h"
 
 bool isObjectDefinition(std::string& line) {
@@ -60,8 +59,6 @@ void usage() {
 
 int wmain(int argc, wchar_t** argv)
 {
-    SDL_Init(SDL_INIT_EVERYTHING);
-
     if (argc < 1) {
         usage();
         return 1;
@@ -77,6 +74,10 @@ int wmain(int argc, wchar_t** argv)
     for (auto& renderObject : renderObjects) {
         std::cout << *renderObject.get() << std::endl;
     }
+
+    RenderContext rc(std::move(renderObjects));
+    rc.render();
+    rc.pollExit();
 
     input_file.close();
     return 0;

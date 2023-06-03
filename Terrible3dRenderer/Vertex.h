@@ -1,12 +1,19 @@
 #pragma once
 
-#include "RenderNode.h"
+#include <istream>
 
-class Vertex : RenderNode {
+#include <gmtl/Point.h>
+
+#include "RenderContext.h"
+
+class RenderContext;
+
+class Vertex {
 	gmtl::Point3f point;
 public:
 	Vertex(std::istream& line);
-	void render();
+	
+	void render(RenderContext *ctx);
 
 	float x();
 	float y();
