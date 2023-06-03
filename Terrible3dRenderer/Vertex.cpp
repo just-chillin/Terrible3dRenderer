@@ -1,4 +1,5 @@
 #include <format>
+#include <iostream>
 
 #include <SDL.h>
 
@@ -23,7 +24,10 @@ float Vertex::y() { return point[1]; }
 float Vertex::z() { return point[2]; }
 
 void Vertex::render(RenderContext *ctx) {
-	SDL_RenderDrawPoint(ctx->renderer, x() / z(), y() / z());
+	float u = abs(100.f * (x() / z()));
+	float v = abs(100.f * (y() / z()));
+	std::cout << std::format("Rendering u = {}, v = {}", u, v) << std::endl;
+	SDL_RenderDrawPoint(ctx->renderer, u, v);
 }
 
 std::ostream& operator<<(std::ostream& os, Vertex& v)

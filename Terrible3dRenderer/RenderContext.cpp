@@ -18,6 +18,8 @@ RenderContext::RenderContext(std::vector<std::unique_ptr<RenderObject>> objects)
 	// Clear the screen
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
+	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 0);
+
 }
 
 RenderContext::~RenderContext() {
@@ -36,8 +38,11 @@ void RenderContext::pollExit() {
 	SDL_Event evt{};
 	while (true) {
 		SDL_PollEvent(&evt);
-		if (evt.type == SDL_QUIT) {
+		switch (evt.type) {
+		case SDL_QUIT:
 			return;
 		}
+		SDL_RenderPresent(renderer);
+
 	}
 }
