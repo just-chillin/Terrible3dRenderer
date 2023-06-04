@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Conversions.cpp" />
     <ClCompile Include="RenderContext.cpp" />
     <ClCompile Include="RenderObject.cpp" />
     <ClCompile Include="Terrible3dRenderer.cpp" />
@@ -273,6 +274,7 @@
     <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_version.h" />
     <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_video.h" />
     <ClInclude Include="..\deps\SDL2-2.26.5\include\SDL_vulkan.h" />
+    <ClInclude Include="Conversions.h" />
     <ClInclude Include="Exceptions.h" />
     <ClInclude Include="RenderContext.h" />
     <ClInclude Include="RenderObject.h" />
