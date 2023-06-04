@@ -12,7 +12,7 @@ RenderContext::RenderContext(std::vector<std::unique_ptr<RenderObject>> objects)
 		return;
 	}
 
-	SDL_CreateWindowAndRenderer(1920, 1080, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC, &window, &renderer);
+	SDL_CreateWindowAndRenderer(SCREEN_W, SCREEN_H, SDL_RENDERER_ACCELERATED, &window, &renderer);
 	SDL_SetWindowTitle(window, "Corrina's Shitty 3d Renderer");
 
 	// Clear the screen

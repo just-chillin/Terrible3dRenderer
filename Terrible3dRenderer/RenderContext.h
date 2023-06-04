@@ -30,4 +30,3 @@ public:
 	RenderContext(std::vector<std::unique_ptr<RenderObject>> objects);
 	~RenderContext();
 };
-

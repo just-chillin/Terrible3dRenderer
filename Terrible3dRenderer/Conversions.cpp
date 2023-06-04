@@ -11,8 +11,7 @@ gmtl::Vec2i toScreenVec2f(const gmtl::Vec3f& vec) {
 	return gmtl::Vec2i(round(u), round(v));
 }
 
-gmtl::Vec2i toScreenCoords(const gmtl::Vec3f& objectPos, const gmtl::Vec2i& screenCenter)
-{
+gmtl::Vec2i toScreenCoords(const gmtl::Vec3f& objectPos, const gmtl::Vec2i& screenCenter) {
 	auto objectPosIn2d = toScreenVec2f(objectPos);
-	return -1 * (objectPosIn2d - screenCenter);
+	return screenCenter - objectPosIn2d;
 }

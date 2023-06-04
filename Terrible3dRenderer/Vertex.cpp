@@ -17,7 +17,7 @@ Vertex::Vertex(std::istream& line) {
 
 		line >> axes[i];
 	}
-	vtx = gmtl::Vec3f(axes[0], axes[1], axes[2]);
+	vtx = 3.f * gmtl::Vec3f(axes[0], axes[1], axes[2]);
 }
 
 void Vertex::render(RenderContext *ctx) {
@@ -27,7 +27,6 @@ void Vertex::render(RenderContext *ctx) {
 	SDL_RenderDrawPoint(ctx->renderer, u, v);
 }
 
-std::ostream& operator<<(std::ostream& os, Vertex& v)
-{
+std::ostream& operator<<(std::ostream& os, Vertex& v) {
 	return os << std::format("Point(x={}, y={}, z={})", v.vtx[0], v.vtx[1], v.vtx[2]);
 }
